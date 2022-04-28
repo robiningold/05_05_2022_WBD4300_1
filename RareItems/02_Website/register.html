@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SNEAKARITY</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="http://fonts.cdnfonts.com/css/bahnschrift" rel="stylesheet">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script defer src="code.js"></script>
+</head>
+<body>
+  <p id="link_products"><a href="products.html">PRODUCTS</p>
+  <p id="link_register"><a href="register.html">REGISTER</a></p>
+  <p id="link_instagram"><a href="https://www.instagram.com/" target=”_blank”>INSTAGRAM</a></p>
+  <p id="link_terms"><a href="terms.html">TERMS & SERVICES</a></p>
+  
+  <section class="content_register">
+    <p class="content_title">REGISTER</p>
+    <p>
+      The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps.
+    </p>
+    <form>
+      <div class="colorway">
+        <label for="colorway">COLORWAY</label><br>
+        <input type="radio" id="colorway" name="colorway" value="brown">
+        <label for="brown">BROWN</label>
+        <input type="radio" id="colorway" name="colorway" value="blue">
+        <label for="blue">BLUE</label>
+      </div>
+
+      <label for="size">SIZE</label>
+      <select id="size" name="size">
+        <option value="">please select</option>
+        <option value="us7">US 7</option>
+        <option value="us7.5">US 7.5</option>
+        <option value="us8">US 8</option>
+        <option value="us8.5">US 8.5</option>
+        <option value="us9">US 9</option>
+        <option value="us9.5">US 9.5</option>
+        <option value="us10">US 10</option>
+        <option value="us10.5">US 10.5</option>
+      </select>
+
+      <label for="first_name">FIRST NAME</label>
+      <input type="text" name="first_name" id="first_name">
+
+      <label for="last_name">LAST NAME</label>
+      <input type="text" name="last_name" id="last_name">
+
+      <label for="street">STREET</label>
+      <input type="text" name="street" id="street">
+
+      <label for="city">CITY</label>
+      <input type="text" name="city" id="city">
+
+      <label for="zip">ZIP</label>
+      <input type="text" name="zip" id="zip">
+
+      <label for="email">EMAIL</label>
+      <input type="email" name="email" id="email">
+
+      <div class="checkbox terms">
+        <input type="checkbox" id="terms" name="terms" value="terms">
+        <label for="terms"> I agree to terms and services.</label><br>
+      </div>
+
+      <div class="checkbox newsletter">
+        <input type="checkbox" id="newletter" name="newletter" value="newsletter">
+        <label for="newletter"> I'd like to join the newsletter to receive news and updates about future products.</label><br>
+      </div>
+      
+      <button type="submit">REGISTER</button>
+    </form>
+  </section>
+</body>
+</html>

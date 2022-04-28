@@ -1,0 +1,448 @@
+/* reset */
+*::before, *::after, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+:root {
+  --logo-font: 'Bahnschrift', sans-serif;;
+  --text-font: 'Courier New', sans-serif;
+  --color-bg: #FFFFFF;
+  --color-text: #4A4A4A;
+  --color-border: #707070;
+  --color-black: #000000;
+ }
+
+body {
+  background: var(--color-bg);
+  font-family: var(--text-font);
+  color: var(--color-text);
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CORNER NAVIGATION */
+
+a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+#link_products {
+  position: absolute;
+  font-size: 1.1rem;
+  top: 0.7rem;
+  left: 0.7rem;
+}
+
+#link_products:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+#link_register {
+  position: absolute;
+  font-size: 1.1rem;
+  top: 0.7rem;
+  right: 0.7rem;
+}
+
+#link_register:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+
+#link_instagram {
+  position: absolute;
+  font-size: 1.1rem;
+  bottom: 0.7rem;
+  left: 0.7rem;
+}
+
+#link_instagram:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+#link_terms {
+  position: absolute;
+  font-size: 1.1rem;
+  bottom: 0.7rem;
+  right: 0.7rem;
+}
+
+#link_terms:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+h1 {
+  font-family: var(--logo-font);
+  font-size: 2.5rem;
+}
+
+/* PRODUCT LINKS & MAIN CONTENT */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content_title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.content_links {
+  margin: 1rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content_link {
+  font-size: 1rem;
+}
+
+.content_link:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
+.content_link:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+/* TERMS & SERVICES */
+
+.content_terms {
+  font-size: 0.8rem;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content_terms  p {
+  hyphens: auto; 
+	text-align: justify;
+}
+
+/* PRODUCT PAGE */
+
+.content_product {
+  position: absolute;
+  top: 4rem;
+  font-size: 0.8rem;
+  width: 95%;
+}
+
+.product_title {
+  font-size: 1.3rem;
+}
+
+.product_subtitle {
+  font-size: 0.9rem;
+}
+
+.slideshow {
+  position: relative;
+  width: 95vw;
+  overflow: hidden;
+}
+
+.slide {
+  width: 95vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left, .right {
+  z-index: 100;
+  color: var(--color-border);
+  border: solid var(--color-border) 2px;
+  padding: 0.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.right {
+  right: 0;
+}
+
+.slides {
+  margin-left: -95vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.thumbnail {
+  width: 25%;
+}
+
+.purchase_info {
+  margin-top: 1rem;
+}
+
+.purchase_info h3 {
+  font-weight: 300;
+}
+
+.purchase_info p {
+  font-weight: 0.9rem;
+}
+
+.purchase_info form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.product_info {
+  padding: 1rem 0 0 0;
+}
+
+.product_info p {
+  hyphens: auto; 
+	text-align: justify;
+}
+
+/* REGISTER */
+
+.content_register {
+  position: absolute;
+  top: 4rem;
+  font-size: 0.8rem;
+  width: 95%;
+}
+
+.content_register p {
+  hyphens: auto; 
+	text-align: justify;
+}
+
+form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+form input[type=text], input[type=email] {
+  width: 100%;
+}
+
+form label , form button {
+  margin-top: 0.65rem;
+  margin-bottom: 0.2rem;
+}
+
+.checkbox {
+  display: flex;
+  margin: 0.7rem 0;
+}
+
+.checkbox label{
+  display: block;
+  margin-bottom: 0.3rem;
+  margin: 0 0 0 1rem;
+}
+
+.checkbox label input[type='checkbox'] {
+  border: solid var(--color-border) 2px;
+  border-radius: 0;
+  margin-left: 1rem;
+}
+
+/* BUTTON STYLING */
+
+button {
+  margin-top: 0.7rem;
+  padding: 0.1rem 0.5rem;
+  background: none;
+  border: solid 2px var(--color-border);
+  color: var(--color-border);
+  font-family: var(--text-font);
+}
+
+/* SELECT STYLING */
+
+select {
+  padding: 0.1rem 7rem 0.1rem 0.1rem;
+  background: none;
+  border: solid 2px var(--color-border);
+  color: var(--color-border);
+  font-family: var(--text-font);
+}
+
+/* INPUT STYLING */
+
+input {
+  border: solid var(--color-border) 2px;
+  padding: 0.1rem;
+}
+
+@media (min-width: 480px) {
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  #link_products {
+    font-size: 1.1rem;
+  }
+  
+  #link_register {
+    font-size: 1.1rem;
+  }
+  
+  
+  #link_instagram {
+    font-size: 1.1rem;
+  }
+  
+  #link_terms {
+    font-size: 1.1rem;
+  }
+  
+  /* PRODUCT LINKS & MAIN CONTENT */
+
+  .content_title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .content_link {
+    font-size: 1rem;
+  }
+  
+  .content_link:not(:first-child) {
+    margin-top: 1.5rem;
+  }
+
+  .content_terms {
+    font-size: 1rem;
+    width: 90%;
+  }
+
+}
+
+@media (min-width: 481px) {
+
+  h1 {
+    font-size: 3.5rem;
+  }
+  
+  /* PRODUCT LINKS & MAIN CONTENT */
+
+  .content_title {
+    font-size: 2rem;
+    margin-bottom: 1.8rem;
+  }
+  
+  .content_link {
+    font-size: 1.1rem;
+  }
+  
+  .content_link:not(:first-child) {
+    margin-top: 1.8rem;
+  }
+
+  .content_terms {
+    font-size: 1rem;
+    width: 80%;
+  }
+
+}
+
+@media (min-width: 789px) {
+
+  h1 {
+    font-size: 4.5rem;
+  }
+  
+  /* PRODUCT LINKS & MAIN CONTENT */
+
+  .content_title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .content_link {
+    font-size: 1.5rem;
+  }
+  
+  .content_link:not(:first-child) {
+    margin-top: 2rem;
+  }
+
+  .content_terms {
+    font-size: 1rem;
+    width: 50%;
+  }
+
+}
+
+@media (min-width: 1350px) {
+  
+  h1 {
+    font-size: 5.5rem;
+  }
+
+  #link_products {
+    font-size: 1.3rem;
+  }
+  
+  #link_register {
+    font-size: 1.3rem;
+  }
+  
+  #link_instagram {
+    font-size: 1.3rem;
+  }
+  
+  #link_terms {
+    font-size: 1.3rem;
+  }
+  
+  /* PRODUCT LINKS & MAIN CONTENT */
+
+  .content_title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .content_link {
+    font-size: 1.5rem;
+  }
+  
+  /* TERMS & SERVICES */
+  
+  .content_terms {
+    font-size: 1rem;
+    width: 25%;
+  }
+
+}
