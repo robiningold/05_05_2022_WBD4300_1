@@ -1,6 +1,14 @@
 
 // Function for the 360 view of the product
 (function () {
+  // Linking to the other Show with the selector
+  $('#colorway').change(function () {
+    console.log(this.value)
+    if (this.value == 'fragment') {
+      window.location.assign('jordan_1_retro_fragment.html')
+   }
+   console.log(this.value)
+  })
 
   // Setting the Image Number to 36 (amount of images)
   let imgNumber = 36
@@ -30,17 +38,12 @@
 
   } else if($('body').is('.fragment')) {
     // Linking to the other Show with the selector
-   /*  $('#colorway').change(function () {
-      select = $(this).val();
-      if (select == 'travis') {
-        // stuff happens if its brown
-      } else if (select == 'fragment') { {
-        window.location.href = 'jordan_1_retro_fragment.html';
-      }
-    }); */
-
     $('#colorway').change(function () {
       console.log(this.value)
+      if (this.value == 'travis') {
+        window.location.assign('jordan_1_retro_travis.html')
+     }
+     console.log(this.value)
     })
 
     // Interval for changing the pictures every 60ms
